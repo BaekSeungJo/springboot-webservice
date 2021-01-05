@@ -1,2 +1,0 @@
-com/devbaek/book/springboot/Application.java
- com.devbaek.book.springboot.Application
