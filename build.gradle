@@ -16,16 +16,25 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    compileOnly 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-mustache'
-    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
-    implementation 'org.springframework.session:spring-session-jdbc'
-    testCompile 'org.springframework.security:spring-security-test'
 
-//  1.4.198 release note
-//  TCP Server and H2 Console do not allow creation of new databases by default.
-//  localhost:8080/h2-console
+    // lombok
+    implementation 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+//    1.4.198 release note
+//    TCP Server and H2 Console do not allow creation of new databases by default.
+//    localhost:8080/h2-console
     implementation 'com.h2database:h2:1.4.197'
+
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client' // 권한 관련
+    implementation 'org.springframework.session:spring-session-jdbc' // 권한 관련
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test' // 권한 관련
+
 }
