@@ -62,7 +62,7 @@ function find_idle_port()
 #
 ## 쉬고 있는 profile의 port 찾기
 #function find_idle_port() {
-#    IDEL_PROFILE = $(find_idle_profile)
+#    IDEL_PROFILE= $(find_idle_profile)
 #
 #    if [ ${IDEL_PROFILE} == real1 ]
 #    then
